@@ -1,0 +1,48 @@
+.lgb{
+  background: rebeccapurple;
+  height: 100vh;
+  width: 100vw;
+  columns: white;
+  display: flex;
+}
+.lgb .lg{
+align-items: center;
+background-color: slateblue;
+height: 50vh;
+width: 20vw;
+margin-left: 40%;
+box-sizing: border-box;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10%;
+margin-top:10%;
+}
+
+.lgb{
+  background: rebeccapurple;
+  height: 100vh;
+  width: 100vw;
+  columns: white;
+  display: flex;
+}
+.lgb .lg{
+align-items: center;
+background-color: slateblue;
+height: 50vh;
+width: 20vw;
+margin-left: 40%;
+box-sizing: border-box;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10%;
+margin-top:10%;
+}
+
+.bgui{
+  background-color: snow;
+  height: 100vh;
+  width: 100vw;
+
+}

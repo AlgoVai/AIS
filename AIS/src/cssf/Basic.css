@@ -1,0 +1,24 @@
+
+.my-row{
+    display: flex;
+  flex-wrap: wrap;  
+  margin-left: 300px;
+  margin-right: 10px;
+}
+.my-col{
+    padding-left: 100px;
+    padding-right: 7px;
+    padding-top: 2px;
+    padding-bottom: 7px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
