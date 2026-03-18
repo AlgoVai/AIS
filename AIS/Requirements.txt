@@ -1,0 +1,1 @@
+please install react , bootstrap react , router react , react-toastify , pnpm add react-hot-toast, 

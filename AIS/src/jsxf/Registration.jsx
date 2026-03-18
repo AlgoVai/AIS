@@ -10,8 +10,8 @@ import { registrationUser } from "../services/RegistrationService";
 
 function Registration() {
   const [regData, setData] = useState({
-    firstName: "",
-    lastName: "",
+    FirstName: "",
+    LastName: "",
     Email: "",
     Phone: "",
     Password: "",
@@ -31,8 +31,8 @@ function Registration() {
    // console.log("Final Data:", regData);
 
     const payload = {
-      firstName : regData.firstName,
-      lastName : regData.lastName,
+      FirstName : regData.FirstName,
+      LastName : regData.LastName,
       Age :  Number( regData.Age),
       Phone :regData.Phone,
       Password : regData.Password,
@@ -62,8 +62,8 @@ function Registration() {
                 <label>First Name</label>
                 <input
                   type="text"
-                  name="firstName"
-                  value={regData.firstName}
+                  name="FirstName"
+                  value={regData.FirstName}
                   onChange={handleChange}
                   required
                   placeholder="Enter your first name"
@@ -77,8 +77,8 @@ function Registration() {
                 <label>Last Name</label>
                 <input
                   type="text"
-                  name="lastName"
-                  value={regData.lastName}
+                  name="LastName"
+                  value={regData.LastName}
                   onChange={handleChange}
                   required
                   placeholder="Enter your last name"
@@ -171,15 +171,16 @@ function Registration() {
                   className="form-control"
                 />
               </div>
-            </div>
-          </div>
-
-          <Button
+                 <Button
             type="submit"
             variant="success"
           >
             Submit
           </Button>
+            </div>
+          </div>
+
+       
         </form>
       </div>
     </>
