@@ -6,6 +6,7 @@ import Home from './jsxf/home';
 import { useState } from 'react';
 import toast, { Toaster } from "react-hot-toast";
 import { logInUser } from './services/RegistrationService';
+import Institution from './jsxf/Administration/Institutiton';
 function Login() {
 
   const [logData,setData] = useState({
@@ -91,7 +92,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
-           <Route path="/Home" element={<Home/>}/>
+          <Route path="/home" element={<Home />}>
+  <Route path="institution" element={<Institution />} />
+</Route>
+           
       </Routes>
     </BrowserRouter>
   );

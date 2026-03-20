@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link, Outlet } from "react-router-dom";
 
 function Home() {
 
@@ -60,7 +61,12 @@ function Home() {
 
         </Container>
       </Navbar>
+   
+      <div style={{display:"flex"}}>
       <div className="slideBar">
+        <h4>
+          <Link to={"Institution"}>Instition</Link>
+        </h4>
         <h4>Adminstration</h4>
         <h4>Dashboard</h4>
         <h4>Face Recognition</h4>
@@ -71,7 +77,14 @@ function Home() {
         <h5>Segmentation</h5>
         <h6>Time Serise</h6>
 
+
       </div>
+     
+      <div className="rightwindowShow">
+        <Outlet/>
+      </div>
+      </div>
+
     </div>
   )
 }

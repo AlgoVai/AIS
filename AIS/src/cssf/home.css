@@ -28,11 +28,16 @@
       #353a47 60%,
       #393f4d 100%
     );
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+
 }
 .home .slideBar{
     width: 15vw;
-    height: 100vh;
     background-color: azure;
+  height: 92vh;
+}
+.home .rightwindowShow{
+  width:90vw;
+  margin-left: 5px;
+   height: 90vh;
 }
