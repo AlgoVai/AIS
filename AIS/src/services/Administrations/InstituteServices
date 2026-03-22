@@ -1,0 +1,22 @@
+const BASE_URL = "http://127.0.0.1:8000/aiwgs";
+ 
+export const createInstitution = async (payload) => {
+  try {
+    const response = await fetch(`${BASE_URL}/profile/Institute/`, {
+      method: "POST",
+      body: payload,
+    });
+ 
+    if (!response.ok) {
+      throw new Error(`Server error: ${response.status} ${response.statusText}`);
+    }
+ 
+    const result = await response.json(); 
+    return result;                        
+ 
+  } catch (error) {
+    throw error;
+  }
+};
+ 
+export default createInstitution;

@@ -7,6 +7,7 @@ import { useState } from 'react';
 import toast, { Toaster } from "react-hot-toast";
 import { logInUser } from './services/RegistrationService';
 import Institution from './jsxf/Administration/Institutiton';
+import InstituteGrid from './jsxf/Administration/GetInstitute';
 function Login() {
 
   const [logData,setData] = useState({
@@ -93,7 +94,7 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
           <Route path="/home" element={<Home />}>
-  <Route path="institution" element={<Institution />} />
+  <Route path="institution" element={<InstituteGrid />} />
 </Route>
            
       </Routes>
